@@ -35,6 +35,8 @@ Since numbers are from **1 to n**, we can use their **indices** to mark them:
 - **Mark that index as negative** (like a flag: "I've seen this number!")
 - If we see the same number again, that index is already negative → **This number is duplicate!**
 
+**Alternate thinking** : Simply we can say its like mapping to indexes if 2 elements maps to same index means this element is again repeated. So add it to ans
+
 ### Example:
 ```
 Array: [4, 3, 2, 7, 8, 2, 3, 1]
