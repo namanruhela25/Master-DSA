@@ -140,7 +140,7 @@ Arrow 2:                           ↑ (at x=12)
 
 ---
 
-## Mermaid — Greedy Decision Flow
+## Greedy Decision Flow
 
 ```mermaid
 flowchart TD
@@ -158,7 +158,7 @@ flowchart TD
 
 ---
 
-## Mermaid — Arrow Coverage on Sorted Intervals
+## Arrow Coverage on Sorted Intervals
 
 ```mermaid
 gantt
