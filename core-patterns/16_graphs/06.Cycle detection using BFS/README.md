@@ -276,12 +276,12 @@ for (int node = 0; node < V; node++) {
 
 ```mermaid
 graph LR
-    subgraph Component 2 — has cycle
+    subgraph C2 [Component 2 has cycle]
         3 --- 4
         4 --- 5
         5 --- 3
     end
-    subgraph Component 1 — no cycle
+    subgraph C1 [Component 1 no cycle]
         0 --- 1
         1 --- 2
     end
@@ -384,12 +384,12 @@ Queue empties. Return false ✓
 
 ```mermaid
 graph LR
-    subgraph Component 2 — cycle
+    subgraph C2 [Component 2 cycle]
         3 --- 4
         4 --- 5
         5 --- 3
     end
-    subgraph Component 1 — no cycle
+    subgraph C1 [Component 1 no cycle]
         0 --- 1
         1 --- 2
     end
