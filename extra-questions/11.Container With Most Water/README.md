@@ -97,24 +97,6 @@ Option B: move RIGHT (taller wall) → right = R-1
 Conclusion: always move the shorter wall. ✓
 ```
 
----
-
-## Mermaid — Two Pointer Decision Flow
-
-```mermaid
-flowchart TD
-    A["left=0, right=n-1, maxArea=0"] --> B{"left < right ?"}
-    B -- No --> C[Return maxArea]
-    B -- Yes --> D["area = right-left × min(height[left], height[right])\nmaxArea = max(maxArea, area)"]
-    D --> E{"height[left] < height[right] ?"}
-    E -- Yes\nLeft is shorter --> F["left++\nMove shorter wall inward"]
-    E -- No\nRight is shorter or equal --> G["right--\nMove shorter wall inward"]
-    F --> B
-    G --> B
-```
-
----
-
 ## How It Works Step By Step
 
 ### Input
