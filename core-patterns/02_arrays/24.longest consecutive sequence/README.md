@@ -257,6 +257,70 @@ Output: 1 ✓
 - Naive: (1 checks 5 neighbors) + (2 checks 3 neighbors) + ... = 5+4+3+2+1 = 15 checks
 - Optimal: 1 starts sequence, counts 1→2→3→4→5 = 5 checks total (2,3,4,5 skip)
 
+
+### Why is the solution `O(n)` on average?
+
+The algorithm stores all elements in an `unordered_set`, where insertion and lookup operations (`find`) take **O(1) average time**.
+
+For every number:
+- We only start counting a sequence if `num - 1` is **not** present in the set.
+- This ensures that each consecutive sequence is traversed **only once**.
+- Every element is visited at most once while extending a sequence.
+
+Hence, the overall average time complexity is:
+
+- Building the `unordered_set`: **O(n)**
+- Iterating through the set: **O(n)**
+- Traversing consecutive sequences: **O(n)** (across all elements)
+
+**Average Time Complexity:** **O(n)**
+
+### Why can the worst-case complexity become `O(n²)`?
+
+`unordered_set` is implemented using a **hash table**. Although lookups are **O(1) on average**, they can degrade to **O(n)** if many elements collide into the same hash bucket.
+
+#### Example of a hash collision
+
+Suppose a poor hash function maps every value to the same bucket:
+
+```
+Bucket 0 → 10 → 20 → 30 → 40 → 50
+Bucket 1 → empty
+Bucket 2 → empty
+Bucket 3 → empty
+Bucket 4 → empty
+```
+
+Searching for `50` requires scanning through all previous elements:
+
+```
+10 → 20 → 30 → 40 → 50
+```
+
+So a single `find()` operation becomes **O(n)** instead of **O(1)**.
+
+Since the algorithm performs approximately `O(n)` lookup operations overall, if each lookup costs `O(n)`, the total complexity becomes:
+
+```
+O(n) × O(n) = O(n²)
+```
+
+### Space Complexity
+
+The `unordered_set` stores all unique elements from the input.
+
+**Space Complexity:** **O(n)**
+
+### Summary
+
+| Complexity | Value |
+|------------|-------|
+| Average Time | **O(n)** |
+| Worst-Case Time | **O(n²)** (due to hash collisions) |
+| Space | **O(n)** |
+
+> **Note:** In practice, modern C++ implementations of `unordered_set` use efficient hashing and rehashing strategies, so the average-case `O(n)` performance is typically achieved.
+
 ---
 
 ## Key Insights
