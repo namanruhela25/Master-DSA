@@ -489,3 +489,4 @@ The given order handles all cases correctly. ✓
 
 - 🔗 [LeetCode 229 — Majority Element II](https://leetcode.com/problems/majority-element-ii/)
 - 🔗 [LeetCode 169 — Majority Element (n/2 version)](https://leetcode.com/problems/majority-element/)
+- 🎮 [Majority Element (n/2 version)](https://www.youtube.com/watch?v=_cBWWebTVpI)
