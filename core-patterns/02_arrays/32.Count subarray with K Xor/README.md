@@ -474,4 +474,4 @@ lookups. Always look up before updating.
 ## References
 
 - 🔗 [GFG — Count Subarray with Given XOR](https://www.geeksforgeeks.org/problems/count-subarray-with-given-xor/1)
-- 🔗 [LeetCode 560 — Subarray Sum Equals K (the sum-based twin of this problem)](https://leetcode.com/problems/subarray-sum-equals-k/)
+- 🔗 [Count Subarray with Given XOR](https://youtu.be/eZr-6p0B7ME)
