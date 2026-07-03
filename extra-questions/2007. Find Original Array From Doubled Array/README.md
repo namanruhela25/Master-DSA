@@ -194,7 +194,6 @@ i=0: num=0, find 2×0=0 in [1..end] → 0 not found after index 0 → return {} 
 > If there's no second `0`, it fails immediately.
 
 ---
-
 ## Time & Space Complexity
 
 | | Complexity |
