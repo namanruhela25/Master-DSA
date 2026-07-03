@@ -9,6 +9,7 @@ public:
       if (lastSeen.find(c) != lastSeen.end() && lastSeen[c] >= l) {
         l = lastSeen[c] + 1;
       }
+
       max_len = max(max_len, r - l + 1);
       lastSeen[c] = r;
     }
