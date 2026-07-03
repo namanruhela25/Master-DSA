@@ -241,3 +241,4 @@ Output: [0, 6] ✅
 
 - 🔗 [LeetCode 438 — Find All Anagrams in a String](https://leetcode.com/problems/find-all-anagrams-in-a-string/)
 - 🔗 [GFG — Count Occurrences of Anagram](https://www.geeksforgeeks.org/problems/count-occurences-of-anagrams5839/1)
+- 🔗 [Youtube — Count Occurrences of Anagram](https://www.youtube.com/watch?v=XxeOHMwBQZU)
