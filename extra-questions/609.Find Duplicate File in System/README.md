@@ -299,6 +299,7 @@ you'd get a much longer (wrong) substring.
 
 The LeetCode editorial for this problem lists common follow-ups:
 
+
 ```
 1. If files are too large to read fully — use file metadata
    (size, last-modified) to pre-filter before hashing content.

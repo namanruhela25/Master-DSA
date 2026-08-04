@@ -3,7 +3,6 @@ public:
     vector<vector<string>> findDuplicate(vector<string>& paths) {
         unordered_map<string,vector<string>> mp;
         vector<vector<string>> ans;
-
         for(auto &path : paths) {
             istringstream ss(path);
             string dir;
@@ -19,13 +18,11 @@ public:
                 mp[content].push_back(filedir);
             }
         }
-
         for(auto &el : mp) {
             if(el.second.size() > 1) {
                 ans.push_back(el.second);
             }
         }
-
         return ans;
     }
 };
