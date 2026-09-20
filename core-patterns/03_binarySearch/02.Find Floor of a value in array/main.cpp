@@ -1,0 +1,22 @@
+class Solution {
+  public:
+
+    int findFloor(vector<int>& arr, int k) {
+        int low = 0;
+        int high = arr.size() - 1;
+        int ans = -1;
+        int n = arr.size();
+        
+        while(low<=high){
+            int mid  = (low + high )/2;
+            if(arr[mid] <= k){
+                ans = mid;
+                low = mid + 1;
+            }else{
+                high = mid - 1;
+            }
+        }
+        
+        return ans;
+    }
+};
